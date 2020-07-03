@@ -57,43 +57,37 @@
       <div class="collapse navbar-collapse rh-toggle" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right main-navbar">
           <li>
-            <a class="active" href="index.html">Home</a>
-            <ul class="dropdown-nav rh-drop-menu">
-              <li>
-                <a href="javascript:;">Home2</a>
-
-              </li>
-            </ul>
+            <a href="#" [routerLink]="['/']">Home</a>
           </li>
           <li>
-            <a href="available-rooms.html">Available Rooms</a>
+            <a href="#" [routerLink]="['/available-rooms']">Available Rooms</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="single-rooms.html">Single Rooms</a>
-          </li>
+          </li> -->
           <li>
-            <a href="booking.html">Booking</a>
+            <a routerLink="/booking">Booking</a>
           </li>
           <li>
             <a href="javascript:;">Events</a>
             <ul class="dropdown-nav rh-drop-menu">
               <li>
-                <a href="events.html">Event</a>
+                <a routerLink="/events">Event</a>
               </li>
               <li>
-                <a href="event-single-page.html">Events Single Page</a>
+                <a routerLink="/event">Events Single Page</a>
               </li>
             </ul>
           </li>
-          <li><a href="blog.html">Blog</a>
+          <li><a routerLink="/blog">Blog</a>
             <ul class="dropdown-nav rh-drop-menu">
               <li>
-                <a href="blog-single-page.html">Blog Single Page</a>
+                <a routerLink="/blog">Blog Single Page</a>
               </li>
             </ul>
           </li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a routerLink="/about">About</a></li>
+          <li><a routerLink="/contact">Contact</a></li>
         </ul>
       </div>
     </div>
