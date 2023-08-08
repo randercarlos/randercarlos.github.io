@@ -2,13 +2,28 @@
 <html lang="en">
 
 <head>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-T72W43K8');</script>
-	<!-- End Google Tag Manager -->
+	<!-- Begin VTurb Preload -->
+	<link rel="preload" href="https://scripts.converteai.net/179744fa-0165-46fb-85eb-ee5f61c06554/players/64d288c75d41570009424af7/player.js" as="script">
+	<link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+	<link rel="preload" href="https://images.converteai.net/179744fa-0165-46fb-85eb-ee5f61c06554/players/64d288c75d41570009424af7/thumbnail.jpg" as="image">
+	<link rel="preload" href="https://cdn.converteai.net/179744fa-0165-46fb-85eb-ee5f61c06554/64d288ba5d41570009424af4/main.m3u8" as="fetch">
+	<link rel="dns-prefetch" href="https://cdn.converteai.net">
+	<link rel="dns-prefetch" href="https://scripts.converteai.net">
+	<link rel="dns-prefetch" href="https://images.converteai.net">
+	<link rel="dns-prefetch" href="https://api.vturb.com.br">
+	<!-- End VTurb Preload -->
+
+	<!-- Begin Google tag (gtag.js) Google Analitics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SD0D5G4NW"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-9SD0D5G4NW');
+	</script>
+	<!-- Begin Google tag (gtag.js) Google Analitics -->
+	
 	
     <!-- Required meta tags -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -40,15 +55,28 @@
 				letter-spacing: 0px;
 			}
 		}
+		
+		@media (max-width: 480px) {
+            .custom-padding {
+                padding: 50px;
+            }
+        }
+		
+		.responsive-img {
+			max-width: 100%;
+			height: auto;
+			margin: 30px 0;
+		}
+		
+		@media (max-width: 768px) {
+            .responsive-img {
+				margin: 10px 0;
+			}
+        }
 	</style>
 </head>
 
 <body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T72W43K8"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	
 	<section id="navbar" style="background: #bf0a0a;">
         <div class="container">
             <div class="row">
@@ -65,54 +93,96 @@
 					<h1 style="color:#fe047c; font-size: 50px; margin-top: 20px;">Parabéns!</h1>
 					<h1 style="font-size: 40px; margin: 30px 0;">Você já pode usar o <span style="color:#fe047c; ">Sistema Zero Flacidez</span>, mas...</h1>
 					<h3 style="margin-bottom: 20px;">Tenho um último importante curto recado pra você...</h3>
-					<h3>Assista o vídeo abaixo...</h3>
 				</div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div id="vid_64d288c75d41570009424af7" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_64d288c75d41570009424af7" src="https://images.converteai.net/179744fa-0165-46fb-85eb-ee5f61c06554/players/64d288c75d41570009424af7/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_64d288c75d41570009424af7" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_64d288c75d41570009424af7">var s=document.createElement("script");s.src="https://scripts.converteai.net/179744fa-0165-46fb-85eb-ee5f61c06554/players/64d288c75d41570009424af7/player.js",s.async=!0,document.head.appendChild(s);</script>
+					<style>.esconder { display: none }</style>
+
+					<!-- Begin Delay Button/Elements Script -->
+					<script type="text/javascript">
+						document.addEventListener("DOMContentLoaded", function() {
+						/* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
+						var SECONDS_TO_DISPLAY = 307;
+						var CLASS_TO_DISPLAY = ".esconder";
+
+						/* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
+						var attempts = 0;
+						var elsHiddenList = [];
+						var elsDisplayed = false;
+						var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
+						var alreadyDisplayedKey =`alreadyElsDisplayed${SECONDS_TO_DISPLAY}`
+						var alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
+
+						setTimeout(function () { elsHiddenList = Array.prototype.slice.call(elsHidden); }, 0);
+
+						var showHiddenElements = function () {
+						elsDisplayed = true;
+						elsHiddenList.forEach((e) => e.style.display = "block");
+						localStorage.setItem(alreadyDisplayedKey, true)
+						}
+
+						var startWatchVideoProgress = function () {
+						if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
+						if (attempts >= 10) return;
+						attempts += 1;
+						return setTimeout(function () { startWatchVideoProgress() }, 1000);
+						}
+
+						smartplayer.instances[0].on('timeupdate', () => {
+						if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
+						if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
+						showHiddenElements();
+						})
+						}
+
+						if (alreadyElsDisplayed === 'true') {
+						setTimeout(function () { showHiddenElements(); }, 100);
+						} else {
+						startWatchVideoProgress()
+						}
+						});
+					</script>
+					<!-- End Delay Button/Elements Script -->
+                </div>
             </div>
 			<div class="row">
                 <div class="col">
                     <div class="som"> <img src="images/img-audio.svg"> Por favor, verifique se o seu som está ligado!</div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/81db61c3-5fb5-4dab-bb13-1e366ad766fc/players/628e98a4d60fab000a508d4d/embed.html" id="ifr_628e98a4d60fab000a508d4d" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>
-                    <!-- <iframe
-                        src="https://player.vimeo.com/video/392740050?autoplay=1&color=30ef00&title=0&byline=0&portrait=0"
-                        id="iframe_video" frameborder="0" webkitallowfullscreen="" mozallowfullscreen=""
-                        allowfullscreen=""></iframe> -->
-                </div>
-            </div>
-			<div class="row">
+			<div class="esconder row">
                 <div class="col-sm-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
                     <div class="progress" style="margin-top: 30px;">
                         <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%; text-align: end; padding-right: 10px;">95 %</div>
                     </div>
                 </div>
             </div>
-            <!--<div class="row button_container" id="button_chechout_hero1">
+            <div class="esconder row button_container" id="button_chechout_hero1">
                 <div class="col">
 				
 					 <div>
-						<button id="kiwify-upsell-trigger-YP2vz2H" type="button" data-ripple-color="#fff" class="btn material-ripple" data-animation="ripple" style="font-size: 16px; width: 700px; margin: 0;">
-							Sim, Quero Ter Um Corpo Sem Flacidez Após Emagrecer
-							<br /><span style="color: #f5e051; font-size: 12px">(atenção: restam apenas 2 vagas)</span>
+						<button id="kiwify-upsell-trigger-0HAlT2q" type="button" data-ripple-color="#fff" class="btn material-ripple" data-animation="ripple" style="font-size: 16px; width: 700px; margin: 0;">
+							Sim, Quero Um Corpo Sem Estrias Após Eliminar a Flacidez
+							<br /><span style="color: #f5e051; font-size: 12px">(atenção: vagas limitadas)</span>
 						</button>
 					</div>
 
 					<div>	
 						<button id="kiwify-upsell-cancel-trigger" type="button" data-ripple-color="#fff" class="btn material-ripple" style="background-color: transparent; width: 700px; border-color: #A4A4A4;">
-							Não, Quero Ter Um Corpo Com Flacidez Após Emagrecer
+							Não, Quero Um Corpo Com Estrias Após Eliminar a Flacidez
 						</button>
 					</div>
 				
 					<script> 
 						let nextUpsellURL = "";
-						let nextDownsellURL = "https://protocolozerobarriga.website/downsell.html";
+						let nextDownsellURL = "https://protocolozerobarriga.website/downsell2.html";
 					</script>
-					<script src="https://kiwify-snippets.netlify.app/upsell/upsell.min.js"></script> 
+					<script src="https://kiwify-snippets.netlify.app/upsell/upsell.min.js"></script>
 					
                     <div>
-                        <ul class="bandeiras">
+                        <ul class="bandeiras" style="margin-top: 10px">
                             <li><img src="images/img-mastercard.png"></li>
                             <li><img src="images/img-paypal.png"></li>
                             <li><img src="images/img-visa.png"></li>
@@ -120,11 +190,11 @@
                         </ul>
                     </div>
 					
-					<div style="margin: 30px 0;">
+					<div>
 						<h3 style="font-size: 0.8em !important; max-width: 500px; margin: 0 auto; margin-bottom: 20px">Ao concluir a compra, entendo que esse preço é com um desconto especial para R$ 97
 							e contará como um pagamento separado do meu pedido original.</h3>
 							
-						<div style="display: flex; align-items: center; justify-content: center; width: 100%">
+						<!-- <div style="display: flex; align-items: center; justify-content: center; width: 100%">
 							<table>
 								<tbody>
 								<tr>
@@ -137,21 +207,36 @@
 								</tr>
 								</tbody>
 							</table>
-						</div>
+						</div> -->
 					</div>
                 </div>
             </div>
-			-->
+			
 			
         </div>
     </section>
 	
 	
 	
-	<section class="content-book">
+	<section class="esconder content-book">
 	 
         <div class="container">
-
+			
+			<div class="d-flex justify-content-center espaco-m" >
+                 <h2>Veja os resultados de algumas das nossas clientes após usar o <span class="pink">Como Apagar Estrias Naturalmente...</span></h2>
+            </div>
+			
+			<div class="d-flex justify-content-center">
+                <div class="box_book">
+                    <div class="row">
+                        <div class="col-md-12 title-book">
+                            <img src="images/sem_estrias1.jpg" class="responsive-img" />
+							<img src="images/sem_estrias2.jpg" class="responsive-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
             <div class="d-flex justify-content-center espaco-m" >
                 <h2>Aqui está o que você vai levar...</h2>
             </div>
@@ -290,7 +375,7 @@
                             <div class="line"></div>
                             <div class="valor">Total: R$ <s>294,00</s></div>
                         </div>
-                        <div class="col-md-5 offset-md-1 col-sm-12 valor-final">
+                        <div class="col-md-5 offset-md-1 col-sm-12 valor-final custom-padding">
                             <div class="off">
                                 85% <br />
                                 OFF
@@ -322,19 +407,19 @@
                 
             </div>
 			
-            <div class="row button_container" id="button_chechout_hero1" style="text-align: center">
+            <!-- <div class="row button_container" id="button_chechout_hero1" style="text-align: center">
                 <div class="col">
 
 					<div>
 						<button id="kiwify-upsell-trigger-0HAlT2q" type="button" data-ripple-color="#fff" class="btn material-ripple" data-animation="ripple" style="font-size: 16px; width: 700px; margin-top: 0;">
-							Sim, Quero Ter Um Corpo Sem Estrias Após Eliminar a Flacidez
-							<br /><span style="color: #f5e051; font-size: 12px">(atenção: restam apenas 1 vagas)</span>
+							Sim, Quero Um Corpo Sem Estrias Após Eliminar a Flacidez
+							<br /><span style="color: #f5e051; font-size: 12px">(atenção: vagas limitadas)</span>
 						</button>
 					</div>
 
 					<div>	
 						<button id="kiwify-upsell-cancel-trigger" type="button" data-ripple-color="#fff" class="btn material-ripple" style="background-color: transparent; width: 700px; border-color: #A4A4A4;  margin: 0;">
-							Não, Quero Ter Um Corpo Com Estrias Após Eliminar a Flacidez
+							Não, Quero Um Corpo Com Estrias Após Eliminar a Flacidez
 						</button>
 					</div>
 					
@@ -344,7 +429,6 @@
 					</script>
 					<script src="https://kiwify-snippets.netlify.app/upsell/upsell.min.js"></script>
 					
-                    <!--</a>-->
                     <div>
                         <ul class="bandeiras">
                             <li><img src="images/img-mastercard.png"></li>
@@ -359,8 +443,7 @@
             <div class="d-flex justify-content-center text-center">
                 <h3 style="font-size: 0.8em !important;    max-width: 500px;
                 line-height: 21px;">Ao concluir a compra, entendo que esse preço é com um desconto especial para R$47 e contará como um pagamento separado do meu pedido original.</h3>
-            </div>
-
+            </div> -->
 
             <div class=" container d-flex flex-column flex-sm-row justify-content-center align-items-center" style="margin-bottom: 30px; margin-top: 50px">
 				<img src="images/30_dias_garantia.png" style="max-width: 150px; height: auto;" class="mr-md-4 pr-sm-0">
@@ -369,50 +452,49 @@
         </div>
     </section>
 	
-	
-	<div class="d-flex justify-content-center align-items-center" style="margin-bottom: 30px">
-		<div class="row">
-			<div class="col">
-				<h5 class="text-center">Referências Científicas</h5>
-				<div style="border-radius: 5px; background: white; padding: 10px">
-					<a href="https://www.sciencedaily.com/releases/2015/08/150804142732.htm" target="_blank" style="max-width: 100%; height: auto;">
-						<img src="images/sciencedaily2.png" />
-					</a>
-				</div>
-			</div>
-		</div>
-    </div>
     
             
-    <footer>
+    <footer class="esconder">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-6 pirataria">
                     <h3> Pirataria é <b>CRIME</b></h3>
                     Qualquer material disponilizado no site Protocolo Zero Barriga só pode ser realizada através deste site, registrado em nome de
-                    Info More LTDA. Qualquer outro site onde você encontre este programa é uma
+                    RCCF LTDA. Qualquer outro site onde você encontre este programa é uma
                     FALSIFICAÇÃO e vai contra as leis. Evite falsificações e recuse conteúdos ilegais ou pirateados.
                     NÃO adquira programas parecidos e que não são baseados em anos de estudo da psicologia
                     comportamental. Não nos responsabilizamos por compras realizadas em outros sites.
                 </div>
+				
                 <div class="col-xs-12 col-md-6">
                     <div class="row">
                         <div class="col text-center">
-                            <img class="logo_footer" src="images/img-logo.png" >
+							<img class="logo_footer" src="images/img-logo.png" >
                         </div>
                     </div>
-                    <div class="row cpy">
+                    <div class="row cpy" style="margin-top: 10px">
                         <div class="col text-center">
-                            Copyright 2023 - Info More LTDA ®<br>
+                            Copyright 2023 - RCCF LTDA ®<br />
+							38.034.440/0001-32<br />
+							contato@protocolozerobarriga.website<br />
                             Todos os direitos reservados.
                         </div>
                     </div>
                 </div>
             </div>
+			<div class="row">
+				<div class="col text-center">
+					<p style="font-size: 10px; color: #666666; margin-top: 20px">Disclaimer: as informações apresentadas têm finalidade meramente informativa e não garantem resultados específicos.
+					Não devem ser consideradas como aconselhamento profissional ou substituto de orientação especializada. 
+					Sempre consulte um profissional qualificado para obter aconselhamento específico para suas necessidades individuais. 
+					Não nos responsabilizamos por qualquer consequência derivada do uso das informações aqui contidas.</p>
+				</div>
+			</div>
             <div class="row links" style="margin-top: 20px;">
-                <div class="col text-center">
-                    <a href="termos-uso.html" target="_blank">Termos de Uso</a>          
+                <div class="col text-center" style="display: flex; justify-content: space-around">
+                    <a href="termos-uso.html" target="_blank">Termos de Uso</a>
                     <a href="privacidade.html" target="_blank">Políticas de Privacidade</a>
+					<a href="politicas-reembolso.html" target="_blank">Políticas de Reembolso</a>
                 </div>
             </div>
         </div>
@@ -437,6 +519,63 @@
         });
     </script>
 
+	<!-- Begin src pay button -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+	<script>
+		var url_domain = window.location.hostname;
+			console.log(url_domain);
+				// console.log(result);
+				var utm_term = undefined;
+			
+				var url_string = window.location.href
+				var url = new URL(url_string);
+				var utm_campaign_value = url.searchParams.get("utm_campaign");
+				var url_domain = window.location.hostname;
+
+				if(utm_term == undefined){
+					var utm_campaign = "xcon="+utm_campaign_value;
+				}
+				function setUrlParams2(el) {
+				var term = utm_campaign;
+				   if (el.href.indexOf('#') == -1) {
+						 var src = "";
+						var querystring = location.search
+						var querystring_without_int_mark = querystring.split("?", 2)[1]
+
+						var existsUrl = el.href;
+						var existsquerystring = existsUrl.split("?", 2)[1]
+
+						// console.log(querystring_without_int_mark, existsquerystring)
+
+						if (existsquerystring === undefined && querystring_without_int_mark !== undefined) {
+							el.href = existsUrl.split("?", 2)[0] + '?' + querystring_without_int_mark+"&"+utm_campaign;
+							return;
+						}
+						if (existsquerystring !== undefined && querystring_without_int_mark !== undefined) {
+							el.href = existsUrl.split("?", 2)[0] + '?' + existsquerystring + '&' + querystring_without_int_mark+"&"+utm_campaign;
+							return;
+						}
+
+						if (querystring_without_int_mark !== undefined) {
+							el.href = existsUrl.split("?", 2)[0] + '?' + existsquerystring + '&' + querystring_without_int_mark+"&"+utm_campaign;
+						}
+						if (querystring_without_int_mark == undefined && existsquerystring == undefined) {
+							el.href = existsUrl;
+						}
+						if (existsquerystring !== undefined) {
+							el.href = existsUrl;
+						}
+
+						console.log('url: '+existsUrl)
+					}
+				}
+				var links = document.querySelectorAll('a');
+
+				links.forEach(setUrlParams2);
+
+
+	</script>
+	<!-- End src pay button -->
 </body>
 
 </html>

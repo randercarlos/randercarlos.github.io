@@ -2,13 +2,27 @@
 <html lang="en">
 
 <head>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-T72W43K8');</script>
-	<!-- End Google Tag Manager -->
+	<!-- Begin VTurb Preload -->
+	<link rel="preload" href="https://scripts.converteai.net/179744fa-0165-46fb-85eb-ee5f61c06554/players/64d226805d41570009424632/player.js" as="script">
+	<link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+	<link rel="preload" href="https://images.converteai.net/179744fa-0165-46fb-85eb-ee5f61c06554/players/64d226805d41570009424632/thumbnail.jpg" as="image">
+	<link rel="preload" href="https://cdn.converteai.net/179744fa-0165-46fb-85eb-ee5f61c06554/64d226347b941e0009cabf7a/main.m3u8" as="fetch">
+	<link rel="dns-prefetch" href="https://cdn.converteai.net">
+	<link rel="dns-prefetch" href="https://scripts.converteai.net">
+	<link rel="dns-prefetch" href="https://images.converteai.net">
+	<link rel="dns-prefetch" href="https://api.vturb.com.br">
+	<!-- End VTurb Preload -->
+	
+	<!-- Begin Google tag (gtag.js) Google Analitics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SD0D5G4NW"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-9SD0D5G4NW');
+	</script>
+	<!-- Begin Google tag (gtag.js) Google Analitics -->
 	
     <!-- Required meta tags -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -33,53 +47,6 @@
     <link rel="stylesheet" href="css/css-style.css">
 
     <link href="css/css-ripple.min.css" rel="stylesheet">
-
-    <!-- Google Tag Manager -->
-    <script>
-		function generateRandomNumber() {
-			var min = 851;
-			var max = 824;
-			var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-		  
-			var peopleViewing = document.getElementById('peopleViewing');
-			if (peopleViewing) {
-				peopleViewing.textContent = randomNumber;
-			}
-		}
-
-		setInterval(generateRandomNumber, 10000);
-		
-		function countdown(duration) {
-			const interval = setInterval(() => {
-				duration = duration - 1000;
-				 
-				// Calcula as horas, minutos e segundos restantes
-				var hours = Math.floor(duration / (1000 * 60 * 60));
-				var minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
-				var seconds = Math.floor((duration % (1000 * 60)) / 1000);
-
-				// Exibe a contagem regressiva
-				var countdownElement = document.getElementById("countdown");
-				countdownElement.textContent = `${formatDigits(hours)}:${formatDigits(minutes)}:${formatDigits(seconds)}`;
-
-				// Verifica se a contagem regressiva chegou ao fim
-				if (duration <= 0) {
-				  clearInterval(interval);
-				  countdownElement.textContent = "Esta Página Sairá do Ar a Qualquer Momento! Clique No Botão Abaixo do Vídeo Para Adquirir a Oferta E Viva Uma Nova Vida!";
-				}
-			}, 1000);
-		}
-		
-		function formatDigits(value) {
-			return value.toString().padStart(2, '0');
-		}
-
-		// Calcula a duração em milissegundos
-		var durationMillis = (3 * 60 * 60 * 1000) + (1000 * 60 * 27) + (1000 * 19);
-
-		// Inicia a contagem regressiva
-		countdown(durationMillis);
-	</script>
     <style>
 		@media only screen and (max-width: 480px) {
 			h1 {
@@ -89,21 +56,99 @@
 				margin-top: 20px !important;
 			}
 		}
+		
+		@media (max-width: 480px) {
+            .custom-padding {
+                padding: 50px 40px;
+            }
+        }
+		
+		 /* Estilo personalizado para o FAQ */
+		.faq-section .container {
+			background-color: #fff; /* Define o fundo branco */
+			padding: 30px 20px; /* Adiciona algum espaço ao redor do conteúdo do FAQ */
+			border-radius: 5px;
+			color: black;
+		}
+		
+		
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .faq-item h4 {
+            font-size: 22px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            font-size: 16px;
+            color: #666;
+        }
+			
+		.faq-section ol li {
+            font-size: 14px;
+			margin-bottom: 20px;
+        }
+		
+        h2 {
+            font-size: 36px;
+            color: #444;
+            margin-bottom: 30px;
+        }
+		
+		h2.white {
+            color: white;
+        }
+
+        /* Estilos para a seção de comentários (exemplo) */
+        .comments-section {
+            background-color: #f2f2f2;
+            padding: 30px 0;
+        }
+
+        .comments-section h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .comment {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+
+        .comment:last-child {
+            border-bottom: none;
+        }
+
+        .comment p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .comment span {
+            font-size: 14px;
+            color: #888;
+        }
 	</style>
 </head>
 
 <body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T72W43K8"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	
 	<section id="navbar" style="background: #bf0a0a">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <!-- Há <b style="color: gold" id="peopleViewing">824</b> Pessoas Nesta Página. <br /> -->
-					Esta Página Sairá do Ar Em <b style="color: gold" id="countdown">03:27:19</b>
+					<b style="color: gold">Atenção:</b> Assista a apresentação até o <b style="color: gold">final</b> para liberar o acesso ao programa... <br />
                 </div>
             </div>
         </div>
@@ -116,39 +161,76 @@
                     <img src="images/img-ultrasecreto.svg" class="ultrasecreto">
                 </div>
             </div>
-            <div class="d-flex justify-content-center" style="margin-bottom: 20px">
-				<div>
-				<h1 style="font-size: 2.0">Médico Americano Revela Ingredientes Caseiros Que Faz <b class="pink">Emagrecer</b> <span style="color: gold">Sem Dietas Restritivas</span> e <span style="color: gold">Sem Exercícios Físicos</span>...</h1>
+            <div class="d-flex justify-content-center align-items-center" style="margin-bottom: 20px;">
+				<div class="d-flex flex-column justify-content-center align-items-center">
+				<!-- <h1>Minha esposa bebeu essa receita todas as manhãs e <span class="pink">emagreceu 7 kg</span> em pouco tempo com este método inovador sem <span style="color: gold">dietas, exercícios físicos ou pílulas...</span></h1> -->
 					<!-- <h1 style="font-size: 2.0">Médico Americano Revela Ingredientes Caseiros Desconhecidos Que Faz Emagrecer Até <b class="pink">11 kg</b> A Cada <b class="pink">30 Dias</b></h1>	-->
-					
-					<h3 style="margin-top: 20px">Assista o vídeo abaixo...</h3>
 				</div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div id="vid_64d226805d41570009424632" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_64d226805d41570009424632" src="https://images.converteai.net/179744fa-0165-46fb-85eb-ee5f61c06554/players/64d226805d41570009424632/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_64d226805d41570009424632" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_64d226805d41570009424632">var s=document.createElement("script");s.src="https://scripts.converteai.net/179744fa-0165-46fb-85eb-ee5f61c06554/players/64d226805d41570009424632/player.js",s.async=!0,document.head.appendChild(s);</script> 
+					<style>.esconder { display: none }</style>
+
+					<script type="text/javascript">
+					document.addEventListener("DOMContentLoaded", function() {
+					/* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
+					var SECONDS_TO_DISPLAY = 1703;
+					var CLASS_TO_DISPLAY = ".esconder";
+
+					/* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
+					var attempts = 0;
+					var elsHiddenList = [];
+					var elsDisplayed = false;
+					var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
+					var alreadyDisplayedKey =`alreadyElsDisplayed${SECONDS_TO_DISPLAY}`
+					var alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
+
+					setTimeout(function () { elsHiddenList = Array.prototype.slice.call(elsHidden); }, 0);
+
+					var showHiddenElements = function () {
+					elsDisplayed = true;
+					elsHiddenList.forEach((e) => e.style.display = "block");
+					localStorage.setItem(alreadyDisplayedKey, true)
+					}
+
+					var startWatchVideoProgress = function () {
+					if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
+					if (attempts >= 10) return;
+					attempts += 1;
+					return setTimeout(function () { startWatchVideoProgress() }, 1000);
+					}
+
+					smartplayer.instances[0].on('timeupdate', () => {
+					if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
+					if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
+					showHiddenElements();
+					})
+					}
+
+					if (alreadyElsDisplayed === 'true') {
+					setTimeout(function () { showHiddenElements(); }, 100);
+					} else {
+					startWatchVideoProgress()
+					}
+					});
+					</script>
+                </div>
             </div>
 			<div class="row">
                 <div class="col">
                     <div class="som"> <img src="images/img-audio.svg"> Por favor, verifique se o seu som está ligado!</div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/81db61c3-5fb5-4dab-bb13-1e366ad766fc/players/628e98a4d60fab000a508d4d/embed.html" id="ifr_628e98a4d60fab000a508d4d" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>
-                    <!-- <iframe
-                        src="https://player.vimeo.com/video/392740050?autoplay=1&color=30ef00&title=0&byline=0&portrait=0"
-                        id="iframe_video" frameborder="0" webkitallowfullscreen="" mozallowfullscreen=""
-                        allowfullscreen=""></iframe> -->
-                </div>
-            </div>
-            <div class="row button_container" id="button_chechout_hero1">
+            <div class="row button_container esconder" id="button_chechout_hero1">
                 <div class="col">
                     <a href="https://pay.kiwify.com.br/V64afxQ">
                         <button type="button" data-ripple-color="#fff" class="btn material-ripple" data-animation="ripple" style="font-size: 16px; width: 600px">
 							Quero Acesso ao Protocolo Zero Barriga Agora
-							<br /><span style="color: #f5e051; font-size: 12px">(atenção: restam apenas 4 vagas)</span>
+							<br /><span style="color: #f5e051; font-size: 12px">(atenção: vagas limitadas)</span>
 						</button>
 					</a>
 					
-
-                    <!--</a>-->
                     <div>
                         <ul class="bandeiras" style="margin-top: 0">
                             <li><img src="images/img-mastercard.png"></li>
@@ -159,40 +241,22 @@
                     </div>
                 </div>
             </div>
-			
-			<!-- <div class="d-flex justify-content-center">
-				<div class="row">
-					<div class="col">
-						<table style="margin-top: 0; margin-bottom: 0">
-							<tr>
-								<td style="padding: 0px 40px 0px 40px;">
-									<img src="images/30dias.png"> 30 Dias de Garantia
-								</td>
-								<td style="padding: 0px 40px 0px 40px;">
-									<img src="images/comprasegura.png" style="width: 70px;"> Compra 100% segura
-								</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-			</div> -->
-			
-			<div class=" container d-flex flex-column flex-sm-row justify-content-center align-items-center" style="margin-bottom: 30px; margin-top: 50px">
-				<img src="images/30_dias_garantia.png" style="max-width: 150px; height: auto;" class="mr-md-4 pr-sm-0">
-				<img src="images/site_seguro.png" style="max-width: 200px; height: auto;" class="mt-sm-0">
-			</div>
-	
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center" style="font-size: 14px; padding: 40px 0px 20px 0px; color: #b7adad;">
-                    <b>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.</b> Depois que você sair
-                    do
-                    Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar
-                    claramente e mostrar todas as provas do produto e usamos resultados reais.
-                </div>
-            </div>
         </div>
     </section>
-    <section class="c-section">
+	
+	<div class="esconder container">
+		<div class="row justify-content-center">
+			<div class="col-md-12 text-center" style="font-size: 14px; padding: 40px 20px 20px 20px; color: #b7adad; max-width: 700px; margin: 0 auto;">
+				<b>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.</b> Depois que você sair
+				do
+				Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar
+				claramente e mostrar todas as provas do produto e usamos resultados reais.
+			</div>
+		</div>
+	</div>
+		
+	
+    <section class="esconder c-section">
         <div class="container" id="c-container">
             <div class="row count-c">
                 <div clas="col">
@@ -676,18 +740,258 @@
                 </div>
             </div>
         </div>
-
     </section>
+	
+	
+	<section class="esconder faq-section" style="margin: 10px; margin-bottom: 50px;">
+		<div class="container" style="max-width: 960px">
+			<div class="row">
+				<div class="col">
+					<h3 class="text-center" style="margin-bottom: 30px; color: #666;">Perguntas Frequentes</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-item">
+						<h4>1. Por que eu deveria comprar o Protocolo Zero Barriga agora?</h4>
+						<p>
+							R: Porque o Dr. John tem um número muito limitado de clientes que ele pode dar atenção com o mais alto grau de qualidade que ele sempre fez.
+							E se você está vendo essa página, significa que as poucas vagas que restam ainda não foram completamente preenchidas. <br />Além disso, a indústria corrupta do 
+							emagrecimento não quer que você saiba desse método e está tentando de tudo para derrubar essa página, pois se muitas pessoas souberem desse método, eles deixaram de ganhar os bilhões de reais 
+							te fazendo ficar doente e dependente dos remédios manipulados deles e que trazem mais malefícios do que benefícios.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-item">
+						<h4>2. Como faço para ter acesso ao Protocolo Zero Barriga?</h4>
+						<p>
+							R: Para ter acesso ao Protocolo Zero Barriga, basta realizar a compra através desta página clicando no botão escrito <b>"Quero Acesso ao Protocolo Zero Barriga Agora"</b>.
+							Após a conclusão da compra, você receberá no e-mail informado no cadastro, os detalhes de acesso ao Protocolo Zero Barriga.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-item">
+						<h4>3. Posso fazer o pagamento através de boleto bancário?</h4>
+						<p>
+							R: Sim, você pode escolher a opção de pagamento via boleto bancário durante o processo de compra.
+							O boleto será gerado e você poderá pagá-lo em qualquer agência bancária, casa lotérica ou via internet banking. 
+							Pode levar até 3 dias úteis para a confirmação do pagamento por boleto bancário.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-item">
+						<h4>4. E se eu não gostar do Protocolo Zero Barriga?</h4>
+						<p>
+							R: Oferecemos uma garantia de satisfação de 30 dias. Se por algum motivo você não estiver satisfeito(a) com o Protocolo Zero Barriga,
+							basta entrar em contato conosco através do email <b>suporte@protocolozerobarriga.website</b> dentro do prazo de garantia para solicitar o reembolso integral do valor pago. Sem perguntas.
+							Mas, como estamos 100% confiantes que você vai gostar do Protocolo Zero Barriga pelos inúmeros resultados e depoimentos que tivemos de clientes felizes e satisfeitas.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-item">
+						<h4>5. Quanto tempo leva para receber o acesso ao Protocolo Zero Barriga após a compra?</h4>
+						<p>
+							R: Assim que a compra for confirmada, você receberá um email com os detalhes de acesso ao conteúdo.
+							Geralmente, o acesso é liberado de forma imediata após a confirmação do pagamento. Caso tenha feito o pagamento via boleto bancário, 
+							pode levar de 2 a 3 dias úteis para a confirmação do pagamento. Assim que confirmado o pagamento, você receberá o e-mail com os detalhes de acesso ao conteúdo.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-item">
+						<h4>6. Por quanto tempo terei acesso ao Protocolo Zero Barriga após a compra?</h4>
+						<p>
+							R: O Protocolo Zero Barriga não tem prazo de acesso. Você poderá acessá-lo no momento em que for melhor para você.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-item">
+						<h4>7. Terei suporte para usar o Protocolo Zero Barriga após a compra?</h4>
+						<p>
+							R: Sim, você terá suporte completo por 30 dias para tirar todas as dúvidas do Protocolo Zero Barriga através do email <b>suporte@protocolozerobarriga.website</b>.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-item">
+						<h4>8. O Protocolo Zero Barriga é testado e comprovado ?</h4>
+						<p>
+							R: Sim, O Protocolo Zero Barriga é um guia de receitas testadas e validadas por um renomado médico americano chamado Dr. John que trabalhou para grandes
+							corporações nos Estados Unidos e já atendeu mais de 5 mil clientes que ficaram satisfeitas com os resultados depois de aplicar o Protocolo Zero Barriga.
+							Além disso, veja os comentários acima de pessoas que tiveram ótimos resultados com o Protocolo Zero Barriga.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-item">
+						<h4>9. O que receberei exatamente ao comprar o Protocolo Zero Barriga ?</h4>
+						<p>
+							R: Você receberá o Protocolo Zero Barriga em forma de um livro eletrônico de 55 páginas totalmente ilustrado contendo todo o passo a passo do preparo 
+							e ingredientes das receitas deliciosas de emagrecimento acelerado preparados pelo Dr. John baseados em estudos científicos e comprovados pelas mais de 5 mil clientes
+							que usaram essas receitas e tiveram resultados. 
+							<br />Além disso, adquirindo o Protocolo Zero Barriga hoje, nesse exato momento, você receberá de presente mais 3 bônus especiais:
+							<ul>
+								<li style="font-size: 16px">1) Como Desbloquear A Sua Melhor Versão</li>
+								<li style="font-size: 16px">2) 9 Chás Para Controlar Os Níveis De Açúcar No Sangue</li>
+								<li style="font-size: 16px">3) 31 Receitas de Suco Detox Para Uma Alimentação Saudável E Antioxidante</li>
+							</ul>
+							
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-item">
+						<h4>10. Eu tentei de tudo e não funcionou. O Protocolo Zero Barriga vai funcionar para mim ?</h4>
+						<p>
+							R: Com Certeza! Se funcionou para as mais de <b>5 mil clientes</b> do Dr. John, temos certeza de que se você aplicar tudo o que for mostrado, as chances de 
+							também funcionar para você serão de 99,9%. Além disso, numa remota e improvável possibilidade de, por algum motivo desconhecido, não funcionar para você. 
+							Nós oferecemos 30 dias de garantia de satisfação com a devolução de 100% do valor investido.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-item">
+						<h4>11. Eu tenho pouquíssimo tempo disponível e estou sempre na correria. O Protocolo Zero Barriga vai servir para mim ?</h4>
+						<p>
+							R: Absolutamente! Você precisará de apenas <b>5 minutos</b> por dia para fazer tudo o que o protocolo ensina para conseguir emagrecer de forma eficaz e saudável.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-item">
+						<h4>12. Em quanto tempo eu começarei a emagrecer depois de comprar Protocolo Zero Barriga ?</h4>
+						<p>
+							R: Isso varia de pessoa para pessoa e de quais alimentações você consome, do seu metabolismo e de como você vai aplicar as receitas que você aprenderá. 
+							Mas a grande maioria das nossas clientes já consegue ver os primeiros resultados após 7 dias de uso diário das receitas e ingredientes mostrados no Protocolo Zero Barriga.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-item">
+						<h4>13. O Protocolo Zero Barriga custa R$ 147 e eu acho muito caro ?</h4>
+						<p>
+							R: Entendo o seu pensamento. Mas aí eu te pergunto: Quanto custa um ano de academia? Quanto custa uma doença decorrente do excesso de peso ? 
+							E os medicamentos? Quanto custa uma nutricionista? Quanto custa a sua autoestima? E a sua qualidade de vida? Quanto custa não ter vergonha do seu próprio corpo? Se você acha que tudo isso vale menos do que 
+							R$ 147, então provavelmente o Protocolo Zero Barriga não é para você. Mas se não for o seu caso, adquiria hoje mesmo Protocolo Zero Barriga tenha uma mudança na sua saúde e no seu corpo assim como as mais de 5 mil clientes do Dr. John.
+						</p>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</section>
 
 
+	<section class="esconder faq-section" style="margin: 10px; margin-bottom: 50px;">
+		<div class="container" style="max-width: 960px">
+			<div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
+				<img src="images/30_dias_garantia.png" style="max-width: 150px; height: auto; margin: 20px;">
+				<p>
+					Estamos tão confiantes de que o <b>Protocolo Zero Barriga</b> trará resultados positivos para você, 
+					assim como aconteceu com nossos clientes satisfeitos, que oferecemos uma <b>garantia de satisfação de 30 dias</b>. <br /><br />
+				
+					Se por algum motivo você não estiver totalmente satisfeito(a) com o Protocolo Zero Barriga, entre em contato 
+					conosco através do email <u>suporte@protocolozerobarriga.website</u> dentro do prazo de 30 dias após a compra, 
+					e nós iremos reembolsar integralmente o valor pago, sem fazer qualquer pergunta.
+				</p>
+			</div>
+		</div>
+	</section>
 
-	<div class="container" style="text-align: center">
+	<section class="esconder faq-section" style="margin: 10px; margin-bottom: 50px;">
+		<div class="container" style="max-width: 960px">
+			<div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
+				<figure style="text-align: center;">
+					<img src="images/american_doctor.png" style="max-width: 150px; height: auto; margin: 20px; margin-bottom: 0; border-radius: 50px">
+					<figcaption><span style="font-family: Verdana, sans-serif; font-weight: bold; font-size: 12px">Dr. John</span></figcaption>
+				</figure>
+				<p>
+					Dr. John é um renomado endocrinologista e nutricionista americano e pesquisador-chefe da Universidade de Princeton nos Estados Unidos.<br /><br />
+					Nos últimos 29 anos, ele dedicou a sua vida na pesquisa sobre saúde metabólica e soluções eficazes para 
+					problemas relacionados ao ganho de peso e a queima de gordura. <br />
+					Seu trabalho pioneiro na área tem sido fundamental para o desenvolvimento de abordagens inovadoras e programas 
+					que têm transformado a vida de milhares de pessoas ao redor do mundo.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="esconder faq-section"  style="margin: 10px; margin-top: 50px">
+		<div class="container" style="max-width: 960px">
+			<div class="row">
+				<div class="col">
+					<h3 class="text-center" style="margin-bottom: 30px; color: #666;">Referências Científicas</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="d-flex flex-column flex-sm-row justify-content-between align-items-center" style="margin-bottom: 20px">
+						<img src="images/referencia1.jpg" style="max-width: 200px; height: auto; border-radius: 5px">
+						<img src="images/referencia2.jpg" style="max-width: 200px; height: auto; border-radius: 5px">
+						<img src="images/referencia3.jpg" style="max-width: 200px; height: auto; border-radius: 5px">
+						<img src="images/referencia4.jpg" style="max-width: 200px; height: auto; border-radius: 5px">
+					</div>
+					<ol>
+						<li>Lee, Y. H., Petkova, A. P., Konkar, A. A., & Granneman, J. G. (2014). Cellular origins of cold-induced brown adipocytes in adult mice. 
+							The FASEB Journal, 29(1), 286-299. doi: 10.1096/fj.14-261880</li>
+					
+						<li>Wu, J., Bostrom, P., Sparks, L. M., Ye, L., Choi, J. H., Giang, A. H., ... & Shabalina, I. G. (2012). 
+							Beige adipocytes are a distinct type of thermogenic fat cell in mouse and human. Cell, 150(2), 366-376. doi: 10.1016/j.cell.2012.05.016</li>
+
+						<li>Stanford, K. I., Middelbeek, R. J., Townsend, K. L., An, D., Nygaard, E. B., Hitchcox, K. M., ... & Goodyear, L. J. (2013). 
+						Brown adipose tissue regulates glucose homeostasis and insulin sensitivity. The Journal of Clinical Investigation, 123(1), 215-223. doi: 10.1172/JCI62308</li>
+
+						<li>Yoneshiro, T., Aita, S., Matsushita, M., Kayahara, T., Kameya, T., Kawai, Y., ... & Saito, M. (2013). 
+							Recruited brown adipose tissue as an antiobesity agent in humans. The Journal of Clinical Investigation, 123(8), 3404-3408. doi: 10.1172/JCI67803</li>
+
+						<li>Hanssen, M. J., Hoeks, J., Brans, B., van der Lans, A. A., Schaart, G., van den Driessche, J. J., ... & Schrauwen, P. (2015). 
+							Short-term cold acclimation recruits brown adipose tissue in obese humans. Diabetes, 65(5), 1179-1189. doi: 10.2337/db14-0746</li>
+
+						<li>Vargas-Castillo, A., & Fuentes-Romero, R. (2017). Active brown fat during 18FDG-PET/CT imaging defines a patient group 
+							with characteristic traits and an increased probability of brown fat redetection. PLoS ONE, 12(8), e0180445. doi: 10.1371/journal.pone.0180445</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+	<div class="esconder container" style="text-align: center">
 		<div class="row button_container" id="button_chechout_hero1" style="margin: 20px;">
 			<div class="col">
 				<a href="https://pay.kiwify.com.br/V64afxQ">
 					<button type="button" data-ripple-color="#fff" class="btn material-ripple" data-animation="ripple" style="font-size: 16px; width: 600px; margin-top: 0">
 						Quero Acesso ao Protocolo Zero Barriga Agora
-						<br /><span style="color: #f5e051; font-size: 12px">(atenção: restam apenas 4 vagas)</span>
+						<br /><span style="color: #f5e051; font-size: 12px">(atenção: vagas limitadas)</span>
 					</button>
 				</a>
 
@@ -702,75 +1006,53 @@
 				</div>
 			</div>
 		</div>
-    </div>
+	</div>
 	
-	<!-- <div class="d-flex justify-content-center">
-		<div class="row">
-			<div class="col">
-				<table style="margin-top: 0; margin-bottom: 40px">
-					<tr>
-						<td style="padding: 0px 40px 0px 40px;">
-							<img src="images/30dias.png"> 30 Dias de Garantia
-						</td>
-						<td style="padding: 0px 40px 0px 40px;">
-							<img src="images/comprasegura.png" style="width: 70px;"> Compra 100% segura
-						</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-    </div> -->
-	
-	
-	<div class=" container d-flex flex-column flex-sm-row justify-content-center align-items-center" style="margin-bottom: 30px; margin-top: 50px">
-		<img src="images/30_dias_garantia.png" style="max-width: 150px; height: auto;" class="mr-md-4 pr-sm-0">
-        <img src="images/site_seguro.png" style="max-width: 200px; height: auto;" class="mt-sm-0">
-    </div>
-	
-	<div class="d-flex justify-content-center align-items-center" style="margin-bottom: 30px">
-		<div class="row">
-			<div class="col">
-				<h5 class="text-center">Referências Científicas</h5>
-				<div style="border-radius: 5px; background: white; padding: 10px">
-					<a href="https://www.sciencedaily.com/releases/2015/08/150804142732.htm" target="_blank" style="max-width: 100%; height: auto;">
-						<img src="images/sciencedaily2.png" />
-					</a>
-				</div>
-			</div>
-		</div>
-    </div>
+	<div class="container d-flex flex-column flex-sm-row justify-content-center align-items-center esconder" style="margin-bottom: 30px; margin-top: 50px">
+		<img src="images/site_seguro.png" style="max-width: 200px; height: auto;" class="mt-sm-0 esconder">
+	</div>
 
 	
-    <footer>
+    <footer class="esconder">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-6 pirataria">
                     <h3> Pirataria é <b>CRIME</b></h3>
                     Qualquer material disponilizado no site Protocolo Zero Barriga só pode ser realizada através deste site, registrado em nome de
-                    Info More LTDA. Qualquer outro site onde você encontre este programa é uma
+                    RCCF LTDA. Qualquer outro site onde você encontre este programa é uma
                     FALSIFICAÇÃO e vai contra as leis. Evite falsificações e recuse conteúdos ilegais ou pirateados.
                     NÃO adquira programas parecidos e que não são baseados em anos de estudo da psicologia
                     comportamental. Não nos responsabilizamos por compras realizadas em outros sites.
                 </div>
+				
                 <div class="col-xs-12 col-md-6">
                     <div class="row">
                         <div class="col text-center">
 							<img class="logo_footer" src="images/img-logo.png" >
                         </div>
                     </div>
-                    <div class="row cpy">
+                    <div class="row cpy " style="margin-top: 10px">
                         <div class="col text-center">
-                            Copyright 2023 - Info More LTDA ®<br>
+                            Copyright 2023 - RCCF LTDA ®<br />
+							38.034.440/0001-32<br />
+							contato@protocolozerobarriga.website<br />
                             Todos os direitos reservados.
                         </div>
                     </div>
                 </div>
             </div>
+			<div class="row esconder">
+				<div class="col text-center">
+					<p style="font-size: 10px; color: #666666; margin-top: 20px">Disclaimer: as informações apresentadas têm finalidade meramente informativa e os resultados podem variar de pessoa para pessoa.
+					Não devem ser consideradas como aconselhamento profissional ou substituto de orientação especializada. 
+					Sempre consulte um profissional qualificado para obter aconselhamento específico para suas necessidades individuais.</p>
+				</div>
+			</div>
             <div class="row links" style="margin-top: 20px;">
-                <div class="col text-center">
-                    <a href="termos-uso.html" target="_blank">Termos de Uso</a>          
+                <div class="col text-center" style="display: flex; justify-content: space-around">
+                    <a href="termos-uso.html" target="_blank">Termos de Uso</a>
                     <a href="privacidade.html" target="_blank">Políticas de Privacidade</a>
-					<!-- <a href="politicas-reembolso.html" target="_blank">Políticas de Reembolso</a> -->
+					<a href="politicas-reembolso.html" target="_blank">Políticas de Reembolso</a>
                 </div>
             </div>
         </div>
@@ -794,6 +1076,64 @@
             $(".mask-cel-ddd").mask("(00) 00000-0000");
         });
     </script>
+	
+	<!-- Begin src pay button -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+	<script>
+		var url_domain = window.location.hostname;
+			console.log(url_domain);
+				// console.log(result);
+				var utm_term = undefined;
+			
+				var url_string = window.location.href
+				var url = new URL(url_string);
+				var utm_campaign_value = url.searchParams.get("utm_campaign");
+				var url_domain = window.location.hostname;
+
+				if(utm_term == undefined){
+					var utm_campaign = "xcon="+utm_campaign_value;
+				}
+				function setUrlParams2(el) {
+				var term = utm_campaign;
+				   if (el.href.indexOf('#') == -1) {
+						 var src = "";
+						var querystring = location.search
+						var querystring_without_int_mark = querystring.split("?", 2)[1]
+
+						var existsUrl = el.href;
+						var existsquerystring = existsUrl.split("?", 2)[1]
+
+						// console.log(querystring_without_int_mark, existsquerystring)
+
+						if (existsquerystring === undefined && querystring_without_int_mark !== undefined) {
+							el.href = existsUrl.split("?", 2)[0] + '?' + querystring_without_int_mark+"&"+utm_campaign;
+							return;
+						}
+						if (existsquerystring !== undefined && querystring_without_int_mark !== undefined) {
+							el.href = existsUrl.split("?", 2)[0] + '?' + existsquerystring + '&' + querystring_without_int_mark+"&"+utm_campaign;
+							return;
+						}
+
+						if (querystring_without_int_mark !== undefined) {
+							el.href = existsUrl.split("?", 2)[0] + '?' + existsquerystring + '&' + querystring_without_int_mark+"&"+utm_campaign;
+						}
+						if (querystring_without_int_mark == undefined && existsquerystring == undefined) {
+							el.href = existsUrl;
+						}
+						if (existsquerystring !== undefined) {
+							el.href = existsUrl;
+						}
+
+						console.log('url: '+existsUrl)
+					}
+				}
+				var links = document.querySelectorAll('a');
+
+				links.forEach(setUrlParams2);
+
+
+	</script>
+	<!-- End src pay button -->
 
 </body>
 
