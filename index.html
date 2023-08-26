@@ -159,7 +159,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-					<b style="color: gold">Atenção:</b> Assista a apresentação até o <b style="color: gold">final</b> para saber como perder peso rapidamente bebendo uma simples vitamina de 6 ingredientes... <br />
+					Há <b style="color: gold"><span id="randomNumber">1.134</span> pessoas</b> nessa página...<br />
                 </div>
             </div>
         </div>
@@ -1145,6 +1145,32 @@
 	</script>
 	<!-- End src pay button -->
 
+	<script>
+    // Defina os valores mínimo e máximo
+    const valorMinimo = 1134;
+    const valorMaximo = 1183;
+
+    // Função para gerar um número aleatório entre o valor mínimo e máximo
+    function gerarNumeroAleatorio(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+	
+	// Função para formatar um número com separadores de milhar
+    function formatarNumero(numero) {
+      return numero.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+
+    // Função para atualizar o número exibido dentro da tag com o ID 'numero-alvo'
+    function atualizarNumero() {
+      const numero = gerarNumeroAleatorio(valorMinimo, valorMaximo);
+      const numeroFormatado = formatarNumero(numero);
+      const numeroAlvoElement = document.getElementById('randomNumber');
+      numeroAlvoElement.textContent = numeroFormatado;
+    }
+
+    // Atualiza o número a cada 3 segundos
+    setInterval(atualizarNumero, 3000);
+  </script>
 </body>
 
 </html>
